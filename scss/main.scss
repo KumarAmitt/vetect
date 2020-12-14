@@ -1,1 +1,97 @@
 @import 'config';
+@import 'colors';
+
+.header {
+  background-color: map-get($map: $colors, $key: accent-color);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  &-logo {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  .nav-items {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    width: 70%;
+    margin: 0 auto;
+
+    .nav-item {
+      padding: 0.5em 1em;
+
+      &-link {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.4rem;
+
+        &-text {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.cover {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../assets/images/dog1.jpg') center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 40vh 1em;
+  text-transform: uppercase;
+
+  &-heading {
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 0.5em;
+  }
+
+  &-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5em;
+
+    p {
+      text-align: left;
+      color: map-get($map: $colors, $key: text-light-black);
+      margin-bottom: 0.2em;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+    }
+
+    .btn-search {
+      color: #fff;
+      background-color: map-get($map: $colors, $key: accent-color);
+      display: block;
+      margin-top: 0.5em;
+      padding-top: 0.2em;
+      padding-bottom: 0.2em;
+    }
+  }
+
+  .btn {
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  .btn-works {
+    color: map-get($map: $colors, $key: text-light-black);
+    background-color: #fff;
+    text-transform: initial;
+    padding: 0.4em 1em;
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-top: 1em;
+    margin-left: -4em;
+  }
+}

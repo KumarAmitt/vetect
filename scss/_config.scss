@@ -1,3 +1,39 @@
+@import 'colors';
+
+//-----CSS RESET-----
+//-------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&display=swap');
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-color: yellow;
+  font-family: 'Prompt', sans-serif;
+  text-align: center;
+}
+
+//-----------------------
+
+input {
+  border-style: hidden;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  background-color: map-get($map: $colors, $key: accent-color);
 }

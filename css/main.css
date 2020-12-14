@@ -1,4 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&display=swap");
+:root {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: yellow;
+  font-family: 'Prompt', sans-serif;
+  text-align: center;
+}
+
+input {
+  border-style: hidden;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  background-color: #d35649;
+}
+
+.header {
+  background-color: #d35649;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-logo {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.header .nav-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.header .nav-items .nav-item {
+  padding: 0.5em 1em;
+}
+
+.header .nav-items .nav-item-link {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.header .nav-items .nav-item-link-text {
+  display: none;
+}
+
+.cover {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../assets/images/dog1.jpg") center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../assets/images/dog1.jpg") center top no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 40vh 1em;
+  text-transform: uppercase;
+}
+
+.cover-heading {
+  color: #fff;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+.cover-card {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5em;
+}
+
+.cover-card p {
+  text-align: left;
+  color: #504d49;
+  margin-bottom: 0.2em;
+}
+
+.cover-card input {
+  display: block;
+  width: 100%;
+}
+
+.cover-card .btn-search {
+  color: #fff;
+  background-color: #d35649;
+  display: block;
+  margin-top: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+}
+
+.cover .btn {
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cover .btn-works {
+  color: #504d49;
+  background-color: #fff;
+  text-transform: initial;
+  padding: 0.4em 1em;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 1em;
+  margin-left: -4em;
 }
 /*# sourceMappingURL=main.css.map */
