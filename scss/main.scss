@@ -8,6 +8,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 
   &-logo {
     font-size: 3rem;
@@ -104,6 +105,7 @@
         line-height: 1.2;
         text-transform: uppercase;
         font-weight: 600;
+        margin-top: 1.5em;
     }
 
     &-items {
@@ -126,4 +128,128 @@
         color: map-get($map: $colors, $key: text-light-black);
       }
     }
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 0 1em;
+
+  &-top {
+      position: relative;
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+
+      &-location-icon {
+          font-size: 2rem;
+          border: 1px solid map-get($map: $colors, $key: send-btn-bg);
+          padding: 0.5em 0.6em;
+          border-radius: 100%;
+          position: absolute;
+          top: 35%;
+          left: 40%;
+      }
+
+      &-location-icon:hover {
+          color: map-get($map: $colors, $key: accent-color);
+          border-color: map-get($map: $colors, $key: accent-color);
+      }
+
+      &-items {
+          border-left: none;
+          border-right: none;
+          display: flex;
+          justify-content: space-around;
+
+          &-ul > * + * {
+            margin-top: 0.8em;
+          }
+
+          &-ul {
+              display: flex;
+              flex-direction: column;
+              list-style-type: none;
+              justify-content: space-around;
+
+              .footer-top-item {
+                  padding: 0 0.5em;
+
+                  .footer-top-link {
+                      text-decoration: none;
+                      font-size: 1.5rem;
+                      color: #fff;
+                      display: block;
+
+                      &:hover {
+                          color: map-get($map: $colors, $key: accent-color);
+                      }
+
+                      &-text {
+                          display: none;
+                      }
+                  }
+              }
+          }
+      }
+  
+    }
+}
+
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+        margin: 1em 0;
+
+        &-title {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.5em;
+        }
+
+        &-desc > * {
+            margin: 0 auto;
+        }
+
+        &-desc input {
+            width: 75%;
+            border: 1px solid map-get($map: $colors, $key: send-btn-bg);
+            background-color: #000;
+            border-radius: 0;
+            font-weight: 400;
+            font-size: 1rem;
+            display: block;
+        }
+
+        &-desc input:hover {
+            border-color: #fff;
+        }
+
+        &-desc p{
+            font-size: 0.9rem;
+        }
+
+    }
+
+    &-btn {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: map-get($map: $colors, $key: send-btn-bg);
+        width: 75%;
+        padding: 0.5em;
+        margin-top: 0.5em;
+        color: #fff;
+        font-weight: 700;
+    }
+
+    &-email,
+    &-more {
+        font-size: 0.9rem;
+        color: map-get($map: $colors, $key: accent-color);
+        text-decoration: none;
+    }
+
 }
