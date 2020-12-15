@@ -35,16 +35,20 @@ input:focus {
 .header {
   background-color: #d35649;
   color: #fff;
-  position: fixed;
-  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -9vh;
   left: 0;
   right: 0;
   z-index: 1;
 }
 
 .header-logo {
-  font-size: 3rem;
-  font-weight: 700;
+  padding-top: 0.2em;
+}
+
+.header-logo-image {
+  width: 50%;
 }
 
 .header .nav-items {
@@ -54,7 +58,7 @@ input:focus {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style-type: none;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -79,6 +83,7 @@ input:focus {
   background-size: cover;
   height: 100vh;
   padding: 40vh 1em;
+  margin-top: -6.5em;
   text-transform: uppercase;
 }
 
@@ -298,5 +303,58 @@ input:focus {
   font-size: 0.9rem;
   color: #d35649;
   text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: #1f1f1f;
+  margin: 0 -1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.footer-bottom .social {
+  margin: 0 1.5em;
+  padding-top: 1em;
+}
+
+.footer-bottom .social-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.footer-bottom .social-item {
+  padding: 0.5em 1em;
+}
+
+.footer-bottom .social-link {
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+}
+
+.footer-bottom .copyright-info {
+  margin-top: 1em;
+}
+
+.footer-bottom .copyright-info span {
+  font-weight: 700;
+  display: block;
+}
+
+.footer-bottom .powered {
+  margin: 1em;
+}
+
+.footer-bottom .powered span {
+  font-weight: 700;
+}
+
+.footer-bottom .wishes {
+  padding-bottom: 1em;
 }
 /*# sourceMappingURL=main.css.map */

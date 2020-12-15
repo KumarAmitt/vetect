@@ -4,22 +4,25 @@
 .header {
   background-color: map-get($map: $colors, $key: accent-color);
   color: #fff;
-  position: fixed;
-  top: 0;
+  position: sticky;
+  top: -9vh;
   left: 0;
   right: 0;
   z-index: 1;
 
   &-logo {
-    font-size: 3rem;
-    font-weight: 700;
+    padding-top: 0.2em;
+
+    &-image {
+      width: 50%;
+    }
   }
 
   .nav-items {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 
     .nav-item {
@@ -44,6 +47,7 @@
   background-size: cover;
   height: 100vh;
   padding: 40vh 1em;
+  margin-top: -6.5em;
   text-transform: uppercase;
 
   &-heading {
@@ -252,4 +256,53 @@
         text-decoration: none;
     }
 
+}
+
+.footer-bottom {
+  background-color: map-get($map: $colors, $key: footer-bottom-bg);
+  margin: 0 -1em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+
+  .social {
+    margin: 0 1.5em;
+    padding-top: 1em;
+
+    &-items {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-evenly;
+    }
+
+    &-item {
+      padding: 0.5em 1em;
+    }
+
+    &-link {
+      color: #fff;
+      display: block;
+      font-size: 1rem;
+    }
+  }
+
+  .copyright-info {
+    margin-top: 1em;
+
+    span {
+      font-weight: 700;
+      display: block;
+    }
+  }
+
+  .powered {
+    margin: 1em;
+
+    span {
+     font-weight: 700;
+    }
+  }
+
+  .wishes {
+    padding-bottom: 1em;
+  }
 }
