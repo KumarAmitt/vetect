@@ -1,0 +1,46 @@
+$colors: (
+  accent-color: #d35649,
+  text-light-black: #504d49,
+  footer-bottom-bg: #1f1f1f,
+  send-btn-bg: #444
+);
+$tablet: 768px;
+$desktop: 1024px;
+
+// FEATURES CARD BG-COLOR
+
+.features-card-one {
+  background-color: #e17f64;
+}
+
+.features-card-two {
+  background-color: #98a4a5;
+}
+
+.features-card-three {
+  background-color: #509bd7;
+}
+
+// FEATURE CARD BUTTON TEXT COLOR
+
+.features-card-one a {
+  color: #e17f64;
+}
+
+.features-card-two a {
+  color: #818c8d;
+}
+
+// FEATURES CARD IMAGES
+
+.features-card-image-one {
+  background: url('../assets/images/feat-1.jpeg');
+}
+
+.features-card-image-two {
+  background: url('../assets/images/feat-2.jpg');
+}
+
+.features-card-image-three {
+  background: url('../assets/images/feat-3.png');
+}

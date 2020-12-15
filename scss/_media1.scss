@@ -1,0 +1,8 @@
+@import 'tools';
+@import 'config';
+
+@include tablet {
+    body {
+      border: 10px solid red;
+    }
+  }
