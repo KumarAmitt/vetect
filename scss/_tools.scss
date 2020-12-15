@@ -4,6 +4,7 @@ $colors: (
   footer-bottom-bg: #1f1f1f,
   send-btn-bg: #444
 );
+$small-screen: 520px;
 $tablet: 768px;
 $desktop: 1024px;
 
@@ -35,12 +36,15 @@ $desktop: 1024px;
 
 .features-card-image-one {
   background: url('../assets/images/feat-1.jpeg');
+  background-size: cover;
 }
 
 .features-card-image-two {
   background: url('../assets/images/feat-2.jpg');
+  background-size: cover;
 }
 
 .features-card-image-three {
   background: url('../assets/images/feat-3.png');
+  background-size: cover;
 }

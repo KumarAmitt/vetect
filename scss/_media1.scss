@@ -1,8 +1,120 @@
 @import 'tools';
 @import 'config';
 
-@include tablet {
-    body {
-      border: 10px solid red;
+@include small-screen {
+
+    .footer-top-items {
+        position: relative;
+        justify-content: space-between;
+        border: 1px solid map-get($map: $colors, $key: send-btn-bg);
+        border-left: none;
+        border-right: none;
+
+        &-ul > * + * {
+            margin-top: 0;
+        }
+
+        &-ul {
+            display: flex;
+            flex: 1;
+            justify-content: space-between;
+        }
+
+        &-left {
+            margin-right: 3em;
+        }
+
+        &-right {
+            margin-left: 3em;
+        }
     }
+
+    .footer-top-location-icon {
+        position: absolute;
+        left: 44%;
+        background-color: #000;
+    }
+}
+
+@include tablet {
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+  
+        &-logo {
+            padding-top: 0;
+            
+            img {
+                width: 70%;
+            }
+        }
+  
+        .nav {
+          flex: 1;
+      }
+    }
+
+    .cover > * {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+  
+    .cover {
+        height: 64vh;
+        padding: 15vh 10vw;
+    }
+
+    .content {
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    
+    .features-card {
+        display: flex;
+        justify-content: space-between;
+
+        &-image {
+          order: 2;
+        }
+
+        &-desc {
+            flex: 1;
+            text-align: left;
+            margin-right: 4em;
+        }
+    }
+
+    .footer {
+       padding-top: 1em;
+
+        &-middle {
+            margin-left: 2em;
+            margin-right: 2em;
+
+           input {
+               display: inline;
+           }
+
+           &-btn {
+               display: inline;
+               padding: 0.4em 2em;
+               margin-left: -0.3em;
+           }
+        }
+    }
+
+    #footer-ul i {
+        display: none;
+    }
+
+    #footer-ul span {
+        display: block;
+    }
+
+
+    .footer-top-items .footer-top-location-icon {
+        left: 46.5%;
+    }
+    
   }

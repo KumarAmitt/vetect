@@ -1,12 +1,13 @@
 @import 'config';
 @import 'tools';
-@import 'media1';
 
 .header {
   background-color: map-get($map: $colors, $key: accent-color);
   color: #fff;
-  position: sticky;
-  top: -9vh;
+  // position: sticky;
+  // top: -9vh;
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   z-index: 1;
@@ -48,7 +49,7 @@
   background-size: cover;
   height: 100vh;
   padding: 40vh 1em;
-  margin-top: -6.4em;
+  // margin-top: -6.4em;
   text-transform: uppercase;
 
   &-heading {
@@ -143,7 +144,6 @@
       width: 200px;
       height: 200px;
       margin: 0 auto;
-      background-size: cover;
       border-radius: 100%;
     }
 
@@ -203,6 +203,7 @@
             display: block;
 
             &-text {
+              font-size: 0.9rem;
               display: none;
             }
 
@@ -212,6 +213,7 @@
           }
         }
       }
+
     }
 
     &-location-icon {
@@ -330,3 +332,5 @@
     padding-bottom: 1em;
   }
 }
+
+@import 'media1';

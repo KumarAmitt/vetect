@@ -54,6 +54,12 @@ input:focus {
 
 // MEDIA QUERIES
 
+@mixin small-screen {
+  @media (min-width: #{$small-screen}) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: #{$tablet}) {
     @content;
