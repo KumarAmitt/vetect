@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetect</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <img src="assets/logo/logo_white.png" alt="vetect_logo" class="header-logo-image">
+        </div>
+        <nav class="nav">
+            <ul class="nav-items" id="nav-ul">
+
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link">
+                        <i class="fas fa-search"></i>
+                        <span class="nav-item-link-text">
+                            <input type="text" placeholder="Clinics">
+                        </span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link">
+                        <i class="far fa-user"></i>
+                        <span class="nav-item-link-text">About</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link">
+                        <i class="fas fa-rss"></i>
+                        <span class="nav-item-link-text">Blog</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link">
+                        <i class="fas fa-bars"></i>
+                        <span class="nav-item-link-text">More...</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="filter">
+            <h2>Filter by Hospitals/Clinics, veterinarian, place and types </h2>
+            <div class="filter-body">
+
+                <div class="filter-body-item">
+                    <label for="clinic">Hospital/Clinic</label>
+                    <select name="clinic" id="clinic">
+                        <option value="ABC Hospital">ABC Hospital</option>
+                        <option value="XYZ Hospital">XYZ Hospital</option>
+                        <option value="PQR Clinic">PQR Clinic</option>
+                    </select>
+                </div>
+
+                <div class="filter-body-item">
+                    <label for="veterinarian">veterinarian</label>
+                    <select name="clinic" id="clinic">
+                        <option value="ABC Hospital">Mr. XYZ</option>
+                        <option value="XYZ Hospital">Mrs. ASDF</option>
+                        <option value="PQR Clinic">Ms. NPQ</option>
+                    </select>
+                </div>
+
+                <div class="filter-body-item">
+                    <label for="place">Place</label>
+                    <select name="clinic" id="clinic">
+                        <option value="ABC Hospital">Kolkata</option>
+                        <option value="XYZ Hospital">Jamshedpur</option>
+                        <option value="PQR Clinic">Telco</option>
+                    </select>
+                </div>
+
+                <div class="filter-body-item">
+                    <label for="type">Type</label>
+                    <select name="clinic" id="clinic">
+                        <option value="ABC Hospital">Dermatologist</option>
+                        <option value="XYZ Hospital">Equine</option>
+                        <option value="PQR Clinic">Pharmacologist</option>
+                    </select>
+                </div>
+
+                <div class="search-btn"><a href="#">Search</a></div>
+
+                <div class="clear">
+                    <a href="#">
+                        <i class="fas fa-edit"></i>
+                        <span>Clear Filter</span>
+                    </a>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+
+    <!-- <footer class="footer">
+
+        <div class="footer-top">
+            <div class="footer-top-items">
+                <ul class="footer-top-items-ul footer-top-items-left" id="footer-ul">
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fas fa-home"></i>
+                            <span class="footer-top-link-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fas fa-search"></i>
+                            <span class="footer-top-link-text">Search</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="far fa-user"></i>
+                            <span class="footer-top-link-text">About us</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fas fa-ad"></i>
+                            <span class="footer-top-link-text">Advertise</span>
+                        </a>
+                    </li>
+                </ul>
+                <i class="fas fa-map-marker-alt footer-top-location-icon"></i>
+                <ul class="footer-top-items-ul footer-top-items-right" id="footer-ul">
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="footer-top-link-text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fab fa-twitter"></i>
+                            <span class="footer-top-link-text">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fas fa-rss"></i>
+                            <span class="footer-top-link-text">Blog</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fab fa-google-plus-g"></i>
+                            <span class="footer-top-link-text">Google+</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+
+            <div class="footer-middle-item">
+                <p class="footer-middle-item-title">subscribe</p>
+                <div class="footer-middle-item-desc">
+                    <input type="email" placeholder="you@example.com">
+                    <a class="footer-middle-btn" href="#">send</a>
+                </div>
+            </div>
+
+            <div class="footer-middle-item">
+                <p class="footer-middle-item-title">Contact</p>
+                <div class="footer-middle-item-desc">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a class="footer-middle-email" href="#">info@example.com</a>
+                </div>
+            </div>
+
+            <div class="footer-middle-item">
+                <p class="footer-middle-item-title">About</p>
+                <div class="footer-middle-item-desc">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id explicabo, libero sapiente pariatur
+                        est veniam consectetur! Nostrum, deleniti.
+                        <a class="footer-middle-more" href="#">Learn more...</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="social">
+                <ul class="social-items">
+                    <li class="social-item">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link"><i class="fas fa-rss"></i></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link"><i class="fas fa-ad"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="copyright-info">
+                <span>&copy; vetect 2020. </span>
+                All rights reserved.
+            </div>
+
+            <div class="powered">
+                powered by:
+                <i class="fab fa-500px"></i>
+                <span>
+                    XYZ Digital
+                </span>
+            </div>
+
+            <div class="wishes">
+                Love and Complements
+            </div>
+
+        </div>
+
+    </footer> -->
+
+
+
+    <script src="https://kit.fontawesome.com/cec8e0eed3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
