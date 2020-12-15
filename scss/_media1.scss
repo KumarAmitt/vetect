@@ -63,6 +63,29 @@
     .cover {
         height: 64vh;
         padding: 15vh 10vw;
+
+        &-card {
+            display: block;
+            margin-top: 0.5em;
+
+            &-flex {
+                display: flex;
+                padding-bottom: 0.5em;
+
+                input {
+                    border-radius: 0;
+                    border-right: 2px solid #fff;
+                }
+
+                .btn-search {
+                    margin-top: 0;
+                    padding-left: 1.5em;
+                    padding-right: 1.5em;
+                    border-radius: 0;
+                }
+
+            }
+        }
     }
 
     .content {
@@ -117,4 +140,8 @@
         left: 46.5%;
     }
     
+  }
+
+  @include desktop {
+
   }

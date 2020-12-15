@@ -641,6 +641,26 @@ input:focus {
     height: 64vh;
     padding: 15vh 10vw;
   }
+  .cover-card {
+    display: block;
+    margin-top: 0.5em;
+  }
+  .cover-card-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 0.5em;
+  }
+  .cover-card-flex input {
+    border-radius: 0;
+    border-right: 2px solid #fff;
+  }
+  .cover-card-flex .btn-search {
+    margin-top: 0;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-radius: 0;
+  }
   .content {
     max-width: 720px;
     margin: 0 auto;
