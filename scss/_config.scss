@@ -33,6 +33,10 @@ input {
   border-radius: 5px;
 }
 
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 input:focus {
   outline: none;
   background-color: map-get($map: $colors, $key: accent-color);
