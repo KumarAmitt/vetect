@@ -1,5 +1,6 @@
 @import 'config';
 @import 'tools';
+@import 'result';
 
 .header {
   background-color: map-get($map: $colors, $key: accent-color);
