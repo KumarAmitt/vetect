@@ -262,3 +262,97 @@
 
 
 
+.modal {
+    margin: 1em;
+
+    &-backdrop {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    &-body {
+        position: fixed;
+        top: 2em;
+        bottom: 2em;
+        right: 10%;
+        left: 10%;
+        background-color: #fff;
+        overflow: auto;
+        padding: 1em;
+        z-index: 10;
+
+        h2 {
+            padding-top: 1.5em;
+            color: map-get($map: $colors, $key: accent-color);
+        }
+
+        p {
+            margin: 1em 0;
+        }
+
+        form {
+            padding: 1em;
+
+            p {
+                text-align: start;
+                margin: 0.8em 0;
+
+                label {
+                    display: block;
+                    padding-bottom: 0.5em;
+                }
+
+                input {
+                    border: 1px solid map-get($map: $colors, $key: send-btn-bg);
+                    display: block;
+                    width: 100%;
+                    font-size: 0.9rem;
+                    border-radius: 0;
+                }
+
+                button {
+                    background-color: map-get($map: $colors, $key: select-field);
+                    border: none;
+                    padding: 0.4em 1em;
+                    color: #fff;
+                    font-size: 1rem;
+
+                    &:hover {
+                        background-color: map-get($map: $colors, $key: accent-color);
+                    }
+                }
+            }
+        }
+    }
+
+    &-close {
+        cursor: pointer;
+        border: 0;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 0.5em;
+        right: 0.5em;
+        font-weight: bold;
+        color: red;
+        background-color: #fff;
+    }
+}
+
+@include tablet {
+
+    .modal .modal-body {
+        max-width: 60%;
+        margin: 0 auto;
+
+    }
+}
+
+@include desktop {
+    .modal .modal-body {
+        max-width: 50%;
+    }
+}
