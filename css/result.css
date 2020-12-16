@@ -142,7 +142,6 @@ input:focus {
 }
 
 .filter-body {
-  margin: 0.5em 0;
   max-width: 480px;
   margin: 0 auto;
 }
@@ -167,7 +166,7 @@ input:focus {
 }
 
 .filter-body-item select:focus {
-  outline: 2px solid #3975D7;
+  outline: 2px solid #3975d7;
 }
 
 .filter-body .search-btn,
@@ -179,7 +178,7 @@ input:focus {
 .filter-body .clear a {
   text-decoration: none;
   display: block;
-  background-color: #3975D7;
+  background-color: #3975d7;
   padding: 0.5em 1em;
   color: #fff;
   font-size: 1.1rem;

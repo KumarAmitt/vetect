@@ -169,12 +169,12 @@ input:focus {
 }
 
 .details .info-card-grid-item p span {
-  color: #3975D7;
+  color: #3975d7;
 }
 
 .details .info-card .open {
   font-size: 1.1rem;
-  background-color: #3975D7;
+  background-color: #3975d7;
   border: none;
   padding: 0.5em 1em;
   color: #fff;
@@ -190,7 +190,7 @@ input:focus {
 }
 
 .details .info-card-subitems span {
-  color: #3975D7;
+  color: #3975d7;
   font-weight: 600;
 }
 

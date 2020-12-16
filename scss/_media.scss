@@ -1,0 +1,253 @@
+@import 'tools';
+@import 'config';
+
+@include small-screen {
+    .footer-top-items {
+      position: relative;
+      justify-content: space-between;
+      border: 1px solid map-get($map: $colors, $key: send-btn-bg);
+      border-left: none;
+      border-right: none;
+  
+      &-ul > * + * {
+        margin-top: 0;
+      }
+  
+      &-ul {
+        display: flex;
+        flex: 1;
+        justify-content: space-between;
+      }
+  
+      &-left {
+        margin-right: 3em;
+      }
+  
+      &-right {
+        margin-left: 3em;
+      }
+    }
+  
+    .footer-top-location-icon {
+      position: absolute;
+      left: 44%;
+      background-color: #000;
+    }
+  }
+  
+  @include tablet {
+    .header {
+      display: flex;
+      justify-content: space-between;
+  
+      &-logo {
+        padding-top: 0;
+  
+        img {
+          width: 70%;
+        }
+      }
+  
+      .nav {
+        flex: 1;
+      }
+    }
+  
+    .cover > * {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  
+    .cover {
+      height: 64vh;
+      padding: 15vh 10vw;
+  
+      &-card {
+        display: block;
+        margin-top: 0.5em;
+  
+        &-flex {
+          display: flex;
+          padding-bottom: 0.5em;
+  
+          input {
+            border-radius: 0;
+            border-right: 2px solid #fff;
+          }
+  
+          .btn-search {
+            margin-top: 0;
+            padding-left: 1.5em;
+            padding-right: 1.5em;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+  
+    .content {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  
+    .features-card {
+      display: flex;
+      justify-content: space-between;
+  
+      &-image {
+        order: 2;
+      }
+  
+      &-desc {
+        flex: 1;
+        text-align: left;
+        margin-right: 4em;
+      }
+    }
+  
+    .footer {
+      padding-top: 1em;
+  
+      &-middle {
+        margin-left: 2em;
+        margin-right: 2em;
+  
+        input {
+          display: inline;
+        }
+  
+        &-btn {
+          display: inline;
+          padding: 0.4em 2em;
+          margin-left: -0.3em;
+        }
+      }
+    }
+  
+    #footer-ul i {
+      display: none;
+    }
+  
+    #footer-ul span {
+      display: block;
+    }
+  
+    .footer-top-items .footer-top-location-icon {
+      left: 46.5%;
+    }
+  }
+  
+  @include desktop {
+    .nav {
+      padding-top: 0.4em;
+      padding-bottom: 0.4em;
+  
+      #nav-ul {
+        flex: none;
+        margin-right: 0;
+        justify-content: flex-end;
+  
+        .nav-item {
+          margin-left: 1em;
+        }
+  
+        & a {
+          display: flex;
+          font-size: 1rem;
+        }
+  
+        & i {
+          font-size: 1.5rem;
+        }
+  
+        & span {
+          display: block;
+          margin-left: 0.5em;
+          font-weight: 600;
+          text-transform: uppercase;
+  
+          input {
+            all: unset;
+            width: 70px;
+  
+            &::placeholder {
+              color: rgba(255, 255, 255, 0.7);
+            }
+  
+            &:hover {
+              border: 1px solid #fff;
+            }
+          }
+        }
+      }
+    }
+  
+    .cover {
+      height: 80vh;
+      padding-top: 30vh;
+  
+      &-card {
+        margin-top: 1em;
+      }
+    }
+  
+    .content {
+      max-width: 1080px;
+  
+      &-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 10em;
+      }
+    }
+  
+    .footer-top-items .footer-top-location-icon {
+      left: 47.2%;
+    }
+  
+    .features-card {
+      padding: 2em 10em;
+    }
+  
+    .footer-middle {
+      flex-direction: row;
+  
+      &-item {
+        flex: 1;
+  
+        input {
+          width: 40%;
+        }
+      }
+    }
+  
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+  
+      .social {
+        padding-top: 0;
+      }
+  
+      .copyright-info {
+        display: flex;
+        margin-top: 0;
+        align-self: center;
+  
+        span {
+          margin-right: 0.5em;
+        }
+      }
+  
+      .powered {
+        margin: 0;
+        align-self: center;
+      }
+  
+      .wishes {
+        padding-bottom: 0;
+        align-self: center;
+      }
+    }
+  }
+  
