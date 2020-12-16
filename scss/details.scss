@@ -1,0 +1,133 @@
+@import 'tools';
+@import 'config';
+
+.details {
+    border: 2px solid red;
+    padding: 1em;
+    padding-top: 24vh;
+
+    .info-card {
+        border: 1px solid map-get($map: $colors, $key: text-light-black);
+        box-shadow: -2px -2px 5px map-get($map: $colors, $key: text-light-black);
+        padding: 1em;
+
+        h2 {
+            color: map-get($map: $colors, $key: accent-color);
+            margin-bottom: 0.5em;
+            text-align: start;
+            margin-left: 0;
+            margin-top: 0;
+        }
+
+        &-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 0.5em;
+
+            &-item {
+                border: 1px solid map-get($map: $colors, $key: filter-bg);
+
+                p {
+                    text-transform: uppercase;
+                     text-align: center;
+                    margin: 0.2em 0;
+
+                    span {
+                        color: map-get($map: $colors, $key: select-field);
+                    }
+                }
+            }
+        }
+
+        .open {
+            font-size: 1.1rem;
+            background-color: map-get($map: $colors, $key: select-field);
+            border: none;
+            padding: 0.5em 1em;
+            color: #fff;
+            margin: 0.5em;
+            
+
+            &:hover {
+                background-color: map-get($map: $colors, $key: accent-color);
+            }
+        }
+
+        &-subitems {
+            font-size: 0.9rem;
+
+            span {
+                color: map-get($map: $colors, $key: select-field);
+                font-weight: 600;
+            }
+        }
+    }
+
+    p {
+        text-align: justify;
+        margin: 1em 0;
+    }
+
+    a {
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.3);
+        color: map-get($map: $colors, $key: text-light-black);
+        display: block;
+        text-align: start;
+        padding: 0.5em 1em;
+        font-size: 1.1rem;
+
+        &:hover {
+            background-color: map-get($map: $colors, $key: footer-bottom-bg);
+            color: #fff;
+        }
+
+    }
+
+    h2 {
+        margin: 1.5em;
+        color: map-get($map: $colors, $key: accent-color);
+    }
+
+    iframe {
+        width: 100%;
+        height: 50vh;
+        border: none;
+    }
+}
+
+@include tablet {
+
+    .info-card .info-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .info-card .info-card-subitems {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .details .map {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}
+
+@include desktop {
+
+    .details {
+        max-width: 80%;
+        margin: 0 auto;
+
+        p {
+            margin-top: 2em;
+            margin-bottom: 2em;
+        }
+
+        a {
+            margin-bottom: 2.5em;
+        }
+    }
+}
