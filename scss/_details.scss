@@ -46,7 +46,6 @@
       color: #fff;
       margin: 0.5em;
 
-
       &:hover {
         background-color: map-get($map: $colors, $key: accent-color);
       }
@@ -55,14 +54,14 @@
     &-subitems {
       font-size: 0.9rem;
 
-      span {
+      &-span {
         color: map-get($map: $colors, $key: select-field);
         font-weight: 600;
       }
     }
   }
 
-  p {
+  &-desc {
     text-align: justify;
     margin: 1em 0;
   }
@@ -82,7 +81,7 @@
     }
   }
 
-  h2 {
+  .map-direction {
     margin: 1.5em;
     color: map-get($map: $colors, $key: accent-color);
   }
@@ -115,7 +114,7 @@
     max-width: 80%;
     margin: 0 auto;
 
-    p {
+    &-desc {
       margin-top: 2em;
       margin-bottom: 2em;
     }
