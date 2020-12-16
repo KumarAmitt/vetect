@@ -20,9 +20,7 @@
                 <li class="nav-item">
                     <a href="#" class="nav-item-link">
                         <i class="fas fa-search"></i>
-                        <span class="nav-item-link-text">
-                            <input type="text" placeholder="Clinics">
-                        </span>
+                        <span class="nav-item-link-text">Clinics</span>
                     </a>
                 </li>
 
@@ -84,7 +82,7 @@
                     </div>
                 </div>
 
-                <button class="open" id="open"> Book an Appointment</button>
+                <button class="open" id="open"type="button"> Book an Appointment</button>
                 <div class="info-card-subitems">
                     <div class="tel"><span class="info-card-subitems-span">TEL: </span> 2747676774</div>
                     <div class="time"><span class="info-card-subitems-span">Open At: </span>10.00 AM</div>
@@ -109,38 +107,38 @@
         <div class="modal" id="modal">
             <div class="modal-backdrop"></div>
             <div class="modal-body">
-                <button class="modal-close" id="close">&#10060;</button>
+                <button class="modal-close" id="close" type="button">&#10060;</button>
                 <h2>Book an Appointment</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, distinctio!</p>
-                <form action="">
+                <form action="#">
                     <p>
                         <label for="first-name">First Name</label>
-                        <input type="text" name="first-name">
+                        <input type="text" name="first-name" id="first-name">
                     </p>
 
                     <p>
                         <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name">
+                        <input type="text" name="last-name" id="last-name">
                     </p>
 
                     <p>
                         <label for="email">Email</label>
-                        <input type="email" name="email">
+                        <input type="email" name="email" id="email">
                     </p>
 
                     <p>
                         <label for="tel">Phone</label>
-                        <input type="tel" name="tel">
+                        <input type="tel" name="tel" id="tel">
                     </p>
 
                     <p>
                         <label for="species">Species</label>
-                        <input type="text" name="species">
+                        <input type="text" name="species"id="species">
                     </p>
 
                     <p>
                         <label for="age">Age</label>
-                        <input type="number" name="age">
+                        <input type="number" name="age"id="age">
                     </p>
 
                     <p>
@@ -157,7 +155,7 @@
 
         <div class="footer-top">
             <div class="footer-top-items">
-                <ul class="footer-top-items-ul footer-top-items-left" id="footer-ul">
+                <ul class="footer-top-items-ul footer-top-items-left" id="footer-ul-1">
                     <li class="footer-top-item">
                         <a href="#" class="footer-top-link">
                             <i class="fas fa-home"></i>
@@ -184,7 +182,7 @@
                     </li>
                 </ul>
                 <i class="fas fa-map-marker-alt footer-top-location-icon"></i>
-                <ul class="footer-top-items-ul footer-top-items-right" id="footer-ul">
+                <ul class="footer-top-items-ul footer-top-items-right" id="footer-ul-2">
                     <li class="footer-top-item">
                         <a href="#" class="footer-top-link">
                             <i class="fab fa-facebook-f"></i>
@@ -290,7 +288,7 @@
 
     <script src="https://kit.fontawesome.com/cec8e0eed3.js" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
+    <script>
         var button = document.getElementById('open');
         var close = document.getElementById('close');
         var modal = document.getElementById('modal');

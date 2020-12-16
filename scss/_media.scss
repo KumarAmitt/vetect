@@ -124,11 +124,13 @@
     }
   }
 
-  #footer-ul i {
+  #footer-ul-1 i,
+  #footer-ul-2 i{
     display: none;
   }
 
-  #footer-ul span {
+  #footer-ul-1 span,
+  #footer-ul-2 span {
     display: block;
   }
 
