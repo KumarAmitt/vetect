@@ -7,8 +7,6 @@
 .header {
   background-color: map-get($map: $colors, $key: accent-color);
   color: #fff;
-  // position: sticky;
-  // top: -9vh;
   position: fixed;
   top: 0;
   left: 0;
