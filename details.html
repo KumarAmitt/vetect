@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetect</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <main class="main">
+
+        <section class="details">
+            <div class="info-card">
+                <h2>Doggie Oye</h2>
+
+                <div class="info-card-grid">
+                    <div class="info-card grid-item">
+                        <p>level <span>info</span></p>
+                    </div>
+                    <div class="info-card grid-item">
+                        <p>level <span>info</span></p>
+                    </div>
+                    <div class="info-card grid-item">
+                        <p>level <span>info</span></p>
+                    </div>
+                    <div class="info-card grid-item">
+                        <p>level <span>info</span></p>
+                    </div>
+                    <div class="info-card grid-item">
+                        <p>level <span>info</span></p>
+                    </div>
+                    <div class="info-card grid-item">
+                        <p>level <span>info</span></p>
+                    </div>
+                    <div class="info-card grid-item">
+                        <p>level <span>info</span></p>
+                    </div>
+                    <div class="info-card grid-item">
+                        <p>level <span>info</span></p>
+                    </div>
+                </div>
+
+                <button class="open open-small" id="open"> Book an Appointment</button>
+                <div class="info-card-subitems">
+                    <div class="tel"><span>TEL:</span> 2747676774</div>
+                    <div class="time"><span>Open At:</span>10.00 AM</div>
+                </div>
+            </div>
+           
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est pariatur id saepe illum laboriosam fugiat tempora dicta sed commodi nam, quasi ex nesciunt, impedit esse, a cum. Pariatur harum optio reprehenderit unde adipisci, dolores tempora nam enim? Reprehenderit, id?</p>
+
+           <a href="#">Click to biew more details</a>
+
+            <h2>MAP Directions:</h2>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.3804218618293!2d86.18031021469132!3d22.788363585072137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e35d80487625%3A0x164f2c70d22bbcd!2sDoggie%20Oye!5e0!3m2!1sen!2sin!4v1608099175314!5m2!1sen!2sin" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+        </section>
+
+        <div class="modal" id="modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-body">
+                <button class="modal-close" id="close">&#10060;</button>
+                <h2>Book an Appointment</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, distinctio!</p>
+                <form action="">
+                    <p>
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name">
+                    </p>
+
+                    <p>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                    </p>
+
+                    <p>
+                        <label for="tel">Phone</label>
+                        <input type="tel" name="tel">
+                    </p>
+                    <p>
+                        <label for="species">Species</label>
+                        <input type="text" name="species">
+                    </p>
+                    <p>
+                        <label for="age">Age</label>
+                        <input type="number" name="age">
+                    </p>
+                    <p>
+                        <button type="submit">Get a Callback</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+    <script src="https://kit.fontawesome.com/cec8e0eed3.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        var button = document.getElementById('open');
+        var close = document.getElementById('close');
+        var modal = document.getElementById('modal');
+
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            modal.style.display = 'block';
+        });
+
+        close.addEventListener('click', function (event) {
+            event.preventDefault();
+            modal.style.display = 'none';
+        });
+
+
+    </script>
+</body>
+
+</html>
