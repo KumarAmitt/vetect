@@ -31,6 +31,10 @@
 
 [Live Demo Link](https://kumaramitt.github.io/vetect/.)
 
+## Presentation
+
+[Watch Presentation Video](https://www.loom.com/share/bf2ce9764ab54b14b8902eab7dee426e?sharedAppSource=personal_library)
+
 
 ## Getting Started
 
