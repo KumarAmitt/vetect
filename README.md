@@ -7,8 +7,11 @@
 > This is the Capstone Project for HTML and CSS Module under Microverse Main Technical Curriculum section.
 
 ![screenshot](./assets/screenshots/pc.png)
+
 ![screenshot](./assets/screenshots/scm.png)
+
 ![screenshot](./assets/screenshots/sct.png)
+
 ![screenshot](./assets/screenshots/scd.png)
 
 
@@ -26,7 +29,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://frederickmih.github.io/TheNextWeb-clone/)
+[Live Demo Link](https://kumaramitt.github.io/vetect/.)
 
 
 ## Getting Started
@@ -47,15 +50,11 @@ Refer the following documentations to download the Text Editor of youe choice:
 
 [Sublime Text](https://www.sublimetext.com/)
 
-Clone this Repository using following command
-
-<pre><code>git clone https://github.com/FrederickMih/TheNextWeb-clone.git</code></pre>
-
 
 ### Usage
 - Clone this Repository using following command
 
-<pre><code>git clone https://github.com/FrederickMih/TheNextWeb-clone.git</code></pre>
+<pre><code>git clone https://github.com/KumarAmitt/vetect.git</code></pre>
 
 - Navigate to the folder TheNextWeb-clone in your File Explorer.
 
@@ -76,7 +75,7 @@ Clone this Repository using following command
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/FrederickMih/TheNextWeb-clone/issues).
+Feel free to check the [issues page](https://github.com/KumarAmitt/vetect/issues).
 
 ## Show your support
 
