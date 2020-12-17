@@ -39,9 +39,10 @@
   .header {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 
     &-logo {
-      padding-top: 0;
+      padding-top: 0.4em;
 
       img {
         width: 70%;
@@ -125,7 +126,7 @@
   }
 
   #footer-ul-1 i,
-  #footer-ul-2 i{
+  #footer-ul-2 i {
     display: none;
   }
 

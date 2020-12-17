@@ -266,7 +266,7 @@ input:focus {
 }
 
 .filter {
-  margin-top: 20vh;
+  margin-top: 25vh;
   background-color: #eee;
   padding: 1em 0.5em;
 }
@@ -1457,9 +1457,12 @@ input:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   .header-logo {
-    padding-top: 0;
+    padding-top: 0.4em;
   }
   .header-logo img {
     width: 70%;
