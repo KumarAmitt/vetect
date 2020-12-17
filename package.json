@@ -1,0 +1,27 @@
+{
+  "name": "vetect",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "index.js",
+  "dependencies": {
+    "hint": "^6.0.7",
+    "stylelint": "^13.3.3",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.17.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KumarAmitt/vetect.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KumarAmitt/vetect/issues"
+  },
+  "homepage": "https://github.com/KumarAmitt/vetect#readme"
+}
