@@ -1,0 +1,77 @@
+@import 'tools';
+
+//-----CSS RESET-----
+//-------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700;800&display=swap');
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Prompt', sans-serif;
+  text-align: center;
+}
+
+//-----------------------
+
+input {
+  border-style: hidden;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+input:focus {
+  outline: none;
+  background-color: map-get($map: $colors, $key: accent-color);
+}
+
+// MARGIN_FIX
+
+.content-item > * + * {
+  margin-top: 1em;
+}
+
+.footer-top-items-ul > * + * {
+  margin-top: 0.8em;
+}
+
+.footer-middle-item-desc > * {
+  margin: 0 auto;
+}
+
+// MEDIA QUERIES
+
+@mixin small-screen {
+  @media (min-width: #{$small-screen}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}

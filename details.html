@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetect</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-logo">
+            <a href="index.html"><img src="assets/logo/logo_white.png" alt="vetect_logo" class="header-logo-image"></a>
+        </div>
+        <nav class="nav">
+            <ul class="nav-items" id="nav-ul">
+
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link">
+                        <i class="fas fa-search"></i>
+                        <span class="nav-item-link-text">Clinics</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link">
+                        <i class="far fa-user"></i>
+                        <span class="nav-item-link-text">About</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link">
+                        <i class="fas fa-rss"></i>
+                        <span class="nav-item-link-text">Blog</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-item-link">
+                        <i class="fas fa-bars"></i>
+                        <span class="nav-item-link-text">More...</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="details">
+            <div class="info-card">
+                <h2>Doggie Oye</h2>
+
+                <div class="info-card-grid">
+                    <div class="info-card-grid-item">
+                        <p>Name: <span>Doggie Oye</span></p>
+                    </div>
+                    <div class="info-card-grid-item">
+                        <p>Physician: <span>Dr. ABC</span></p>
+                    </div>
+                    <div class="info-card-grid-item">
+                        <p>Certification: <span>XYZ</span></p>
+                    </div>
+                    <div class="info-card-grid-item">
+                        <p>City: <span>Asdfgg</span></p>
+                    </div>
+                    <div class="info-card-grid-item">
+                        <p>Email: <span>email@example.com</span></p>
+                    </div>
+                    <div class="info-card-grid-item">
+                        <p>Phone <span>8787676767</span></p>
+                    </div>
+                    <div class="info-card-grid-item">
+                        <p>Fee <span>Rs. 500</span></p>
+                    </div>
+                    <div class="info-card-grid-item">
+                        <p>Closed: <span>Sunday</span></p>
+                    </div>
+                </div>
+
+                <button class="open" id="open" type="button">Book an Appointment</button>
+                <div class="info-card-subitems">
+                    <div class="tel"><span class="info-card-subitems-span">TEL: </span> 2747676774</div>
+                    <div class="time"><span class="info-card-subitems-span">Open At: </span>10.00 AM</div>
+                </div>
+            </div>
+
+            <p class="details-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos est pariatur id saepe illum laboriosam
+                fugiat tempora dicta sed commodi nam, quasi ex nesciunt, impedit esse, a cum. Pariatur harum optio
+                reprehenderit unde adipisci, dolores tempora nam enim? Reprehenderit, id?</p>
+
+            <a href="#">Click to view more details</a>
+
+            <h2 class="map-direction" ><span><i class="far fa-compass"></i></span> MAP Directions:</h2>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3678.3804218618293!2d86.18031021469132!3d22.788363585072137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e35d80487625%3A0x164f2c70d22bbcd!2sDoggie%20Oye!5e0!3m2!1sen!2sin!4v1608099175314!5m2!1sen!2sin"></iframe>
+            </div>
+
+        </section>
+
+        <div class="modal" id="modal">
+            <div class="modal-backdrop"></div>
+            <div class="modal-body">
+                <button class="modal-close" id="close" type="button">&#10060;</button>
+                <h2>Book an Appointment</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, distinctio!</p>
+                <form action="#">
+                    <p>
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </p>
+
+                    <p>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+
+                    <p>
+                        <label for="tel">Phone</label>
+                        <input type="tel" name="tel" id="tel">
+                    </p>
+
+                    <p>
+                        <label for="species">Species</label>
+                        <input type="text" name="species" id="species">
+                    </p>
+
+                    <p>
+                        <label for="age">Age</label>
+                        <input type="number" name="age" id="age">
+                    </p>
+
+                    <p>
+                        <button type="submit">Get a Callback</button>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="footer-top-items">
+                <ul class="footer-top-items-ul footer-top-items-left" id="footer-ul-1">
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fas fa-home"></i>
+                            <span class="footer-top-link-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fas fa-search"></i>
+                            <span class="footer-top-link-text">Search</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="far fa-user"></i>
+                            <span class="footer-top-link-text">About us</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fas fa-ad"></i>
+                            <span class="footer-top-link-text">Advertise</span>
+                        </a>
+                    </li>
+                </ul>
+                <i class="fas fa-map-marker-alt footer-top-location-icon"></i>
+                <ul class="footer-top-items-ul footer-top-items-right" id="footer-ul-2">
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="footer-top-link-text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fab fa-twitter"></i>
+                            <span class="footer-top-link-text">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fas fa-rss"></i>
+                            <span class="footer-top-link-text">Blog</span>
+                        </a>
+                    </li>
+                    <li class="footer-top-item">
+                        <a href="#" class="footer-top-link">
+                            <i class="fab fa-google-plus-g"></i>
+                            <span class="footer-top-link-text">Google+</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-middle">
+
+            <div class="footer-middle-item">
+                <p class="footer-middle-item-title">subscribe</p>
+                <div class="footer-middle-item-desc">
+                    <input type="email" placeholder="you@example.com">
+                    <a class="footer-middle-btn" href="#">send</a>
+                </div>
+            </div>
+
+            <div class="footer-middle-item">
+                <p class="footer-middle-item-title">Contact</p>
+                <div class="footer-middle-item-desc">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a class="footer-middle-email" href="#">info@example.com</a>
+                </div>
+            </div>
+
+            <div class="footer-middle-item">
+                <p class="footer-middle-item-title">About</p>
+                <div class="footer-middle-item-desc">
+                    <p>Our team at VETECT is passionate abour pets and people who loves them. We hace years of experience working with pet owners to care all kinds of animals
+                        <a class="footer-middle-more" href="#">Learn more...</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <div class="social">
+                <ul class="social-items">
+                    <li class="social-item">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link"><i class="fas fa-rss"></i></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link"><i class="fab fa-google-plus-g"></i></a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#" class="social-link"><i class="fas fa-ad"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="copyright-info">
+                <span>&copy; vetect 2020. </span>
+                All rights reserved.
+            </div>
+
+            <div class="powered">
+                powered by:
+                <i class="fab fa-500px"></i>
+                <span>
+                    XYZ Digital
+                </span>
+            </div>
+
+            <div class="wishes">
+                Love and Complements
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+
+    <script src="https://kit.fontawesome.com/cec8e0eed3.js" crossorigin="anonymous"></script>
+
+    <script>
+        var button = document.getElementById('open');
+        var close = document.getElementById('close');
+        var modal = document.getElementById('modal');
+
+        button.addEventListener('click', function (event) {
+            event.preventDefault();
+            modal.style.display = 'block';
+        });
+
+        close.addEventListener('click', function (event) {
+            event.preventDefault();
+            modal.style.display = 'none';
+        });
+
+
+    </script>
+</body>
+
+</html>
