@@ -271,7 +271,7 @@ input:focus {
   padding: 1em 0.5em;
 }
 
-.filter h2 {
+.filter-heading {
   color: #504d49;
   line-height: 1.2;
 }

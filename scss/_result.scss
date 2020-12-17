@@ -6,7 +6,7 @@
   background-color: map-get($map: $colors, $key: filter-bg);
   padding: 1em 0.5em;
 
-  h2 {
+  &-heading {
     color: map-get($map: $colors, $key: text-light-black);
     line-height: 1.2;
   }
