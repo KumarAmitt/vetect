@@ -36,6 +36,12 @@
         color: #fff;
         text-decoration: none;
         font-size: 1.4rem;
+        transition: transform 0.4s linear;
+        
+        &:hover {
+          transform: scale(1.1);
+          
+        }
 
         &-text {
           display: none;
@@ -83,6 +89,11 @@
       margin-top: 0.5em;
       padding-top: 0.2em;
       padding-bottom: 0.2em;
+      transition: background-color 0.4s linear;
+
+      &:hover {
+        background-color: map-get($map: $colors, $key: accent-dark);
+      }
     }
   }
 
@@ -100,6 +111,12 @@
     display: inline-block;
     margin-top: 1em;
     margin-left: -4em;
+    transition: all 0.4s linear;
+
+    &:hover {
+      background-color: map-get($map: $colors, $key: accent-dark);
+      color: #fff;
+    }
   }
 }
 
