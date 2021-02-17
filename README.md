@@ -8,19 +8,13 @@
 
 ![screenshot](./assets/screenshots/pc.png)
 
-<p align="center">
+<p align="space">
   
   <img src="assets/screenshots/scm.png">
   <img src="assets/screenshots/scl.png">
   <img src="assets/screenshots/sct.png">
 
 </p>
-
-![screenshot](./assets/screenshots/scm.png)
-
-![screenshot](./assets/screenshots/scl.png)
-
-![screenshot](./assets/screenshots/sct.png)
 
 ![screenshot](./assets/screenshots/scd.png)
 
