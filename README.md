@@ -8,7 +8,7 @@
 
 ![screenshot](./assets/screenshots/pc.png)
 
-<p align="space">
+<p align="center">
   
   <img src="assets/screenshots/scm.png">
   <img src="assets/screenshots/scl.png">
