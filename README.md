@@ -8,6 +8,12 @@
 
 ![screenshot](./assets/screenshots/pc.png)
 
+<p align="center">
+  ![screenshot](./assets/screenshots/scm.png)
+  ![screenshot](./assets/screenshots/scl.png)
+  ![screenshot](./assets/screenshots/sct.png)
+</p>
+
 ![screenshot](./assets/screenshots/scm.png)
 
 ![screenshot](./assets/screenshots/scl.png)
